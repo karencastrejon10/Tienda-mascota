@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Imperial+Script&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #FFFF;
+    min-height: 100vh;
+}
+/*HEADER MAS EL NAVBAR COMPUTADORA Y DISPOSITIVOS MOVILES*/
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+     
+
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+.listas{
+    display: flex;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.list{
+   display: flex;
+   margin-top:30px;
+   gap: 10px;
+
+}
+
+.list_item a{
+   text-decoration: none;
+   color: #000;
+   
+}
+.list_item a:hover{
+    border: 1px solid #4ca1f5;
+    border-radius: 15px;
+    color: #4ca1f5;
+    background-color: #c2e6fd;
+    
+}
+.list_item {
+    list-style: none;
+}
+
+/*SECCION PARA EL MENU DESPLEGABLE*/
+.dropdown {
+position: relative;
+display: inline-block;
+margin-left: 10px;
+
+}
+.dropdown-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #000;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 15PX;
+
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+min-width: 160px;
+z-index: 4;/*ES SUPER IMPORTANTE PONER EL Z-INDEX PARA Q2UE EL COMPORTAMIENTO NO CAMBIE*/
+}
+.dropdown-content a {
+color: black;
+text-decoration: none;
+padding: 12px 16px;
+display: block;
+
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/*PARA EL MENU HAMBURGUESA EN DISPISITVOS MOVILES*/
+/* BOTÓN HAMBURGUESA */
+.menu-btn {
+    font-size: 32px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Oculto en desktop */
+    position: fixed;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* SIDEBAR LATERAL */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* DROPDOWNS DENTRO DEL SIDEBAR */
+.sidebar .dropdown {
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar .dropdown-button {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .dropdown-content {
+    position: static;
+    display: none;
+    background-color: #e9e9e9;
+    padding-left: 10px;
+}
+
+.sidebar .dropdown:hover .dropdown-content {
+    display: block;
+}
+.elemento2{
+    padding: 10px 20px;
+    display: flex;
+}
+.elemento2 input{
+    padding: 5px;
+}
+.main__wrapper{
+     padding: 0;
+    margin: 0;
+   min-height: clamp(500px,700px,700px);
+    background-image: linear-gradient(#0005,#0005),url(IMAGENES/mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+  
+}
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+}
+.btn{
+    padding: 10px 20px;
+    display: flex;
+    position: relative;
+    top: 350px;
+    border-radius:15px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #48e;
+    transition: 1s;
+}
+.section-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+.category-tabs {
+    display: flex;
+    gap: 40px;                       /* Separación exacta entre Perros y Gatos */
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+}
+
+/* ---- BOTONES ---- */
+.tab-button {
+    background: none;
+    border: none;
+    font-size: 38px;                 /* Tamaño grande como el sitio */
+    padding: 0 0 12px 0;
+    cursor: pointer;
+    color: #aaa;                     /* Gris claro para inactivas */
+    position: relative;
+    transition: color .25s ease;
+}
+
+/* ---- SUBRAYADO ANIMADO EXACTO ---- */
+.tab-button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width .25s ease;
+}
+
+/* ---- ACTIVA (subrayado + color negro) ---- */
+.tab-button.active {
+    color: black;
+}
+
+.tab-button.active::after {
+    width: 100%;
+}
+
+/* ---- CONTENIDO OCULTO ---- */
+.tab-content {
+    display: none;
+}
+
+/* ---- CONTENIDO VISIBLE ---- */
+.tab-content.active {
+    display: block;
+}
+.section__images{
+    display: grid;
+   width: 100%;
+   
+}
+.grid{
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 10px;
+ 
+  animation: aparecer 10s both;
+  animation-timeline: scroll();
+}
+.grid-element{
+    margin-left:25px;
+    margin-right: 25px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #6667;
+
+}
+.grid-element img{
+    width: 350px;
+    
+}
+.grid-element img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.grid-element-1{
+    display: flex;
+    
+}
+.grid-element-2{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 25px;
+  display: flex ;
+
+ 
+}
+.grid-element-2 a{
+    text-decoration: none;
+    color: #000;
+}
+.grid-element-3{
+    display: flex;
+    font-size: 12px;
+}
+.grid-element-4{
+    display: flex;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.grid-element-5{
+    display: flex;
+    font-size: 20px;
+}
+.recetas{
+    width: 100%;
+
+}
+.recetas h2{
+    font-family:"Raleway", sans-serif; 
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-weight: 1200;
+}
+.recetas p{
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
+.btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: 10px 20px;
+    width: 250px;
+   color: #fff;
+   background-color: #000;
+   box-shadow: 0px 0px 2px #000;
+   /*BOTON
+   /*position: relative;
+  padding: 15px 40px;
+  background: #6200ee;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden; /* Importante para ocultar pseudo-elementos */
+}
+/*.btn-2::before{
+     content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255,255,255,0.6) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg);
+  animation: shine 2s infinite;
+}
+/*.btn-2::after{
+     content: "";
+  position: absolute;
+  inset: 0;  /* top, right, bottom, left: 0 */
+ /* border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(45deg, #ff00cc, #00ccff);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: borderGlow 3s linear infinite;
+}
+/*@keyframes shine {
+  from {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  to {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+/*@keyframes borderGlow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}*/
+.btn-2 a{
+    text-decoration: none;
+   color: #fff;
+    
+}
+.btn-2:hover{
+    border: 2px solid #fff;
+    
+
+}
+.img-recetas{
+    min-width: 100%;
+    
+  
+}
+.img-recetas img{
+    width: 100%;
+   height: 600px;
+}
+.info{
+    min-width: 100%;
+    position: relative;
+    top: 25px;
+    height: 200px;
+   
+}
+.info img{
+    width: 100%;
+}
+.grid--__fondo{
+    background-color: 	#D3D3D3;
+    
+}
+.grid-2{
+    background-color: #D3D3D3;
+ display: grid;  
+  grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: repeat(1,400px);
+  gap: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  
+  
+}
+
+.grid__item-2{
+background-color: #fff;
+  display: grid;
+
+}
+.grid__item-2 span{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+      font-size: 70px;
+}
+.grid__item-2-titulo{
+    font-family:"Raleway", sans-serif; 
+     font-weight: 600;
+  font-size: 25px;
+  display: flex ;
+  justify-content: center;
+}
+.grid__item-2-parrafo{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: -30px;
+}
+/*BOTON DE CONOCE LAS RECETAS*/
+.grid__item-2-btn {
+    margin-top: -20px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #f01212;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif; 
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.grid__item-2-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;              /* empieza en el centro */
+    height: 2px;
+    width: 0;                /* contraída */
+    background-color: red;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.grid__item-2-btn:hover::after {
+    width: 100%;             /* se expande totalmente */
+    left: 0;                 /* se mueve hacia la izquierda para cubrir todo */
+}
+
+.grid__item-2-btn:hover {
+    background: #e0d4d4;     /* opcional: fondo al hover */
+} 
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer__list-titulo{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.footer__list-element{
+    display: block;
+    margin-top: 15px;
+}
+.footer__list-element a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+/* MODO RESPONSIVE */
+@media(max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .list {
+        display: none; /* Oculta menú horizontal */
+    }
+
+    .elemento2 {
+        display: none; /* Oculta buscador */
+    }
+}
+
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*RESPONSIVE*/
+/*  Tablets */
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .list {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .elemento2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .elemento2 input {
+        width: 70%;
+    }
+
+    /* GRID de productos */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-element img {
+        width: 250px;
+    }
+
+    /* Grid-2 (cuadros grandes) */
+    .grid-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+}
+
+/*  Celulares */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown-button {
+        font-size: 14px;
+    }
+
+    /* BUSCADOR */
+    .elemento2 input {
+        width: 90%;
+    }
+
+    /* BOTÓN PRINCIPAL */
+    .btn {
+        top: 200px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* TABS */
+    .category-tabs {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tab-button {
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* GRID PRODUCTOS */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-element img {
+        width: 220px;
+    }
+
+    /* TEXTOS */
+    .recetas h2 {
+        font-size: 36px;
+    }
+
+    .recetas p {
+        font-size: 18px;
+    }
+
+    .grid-element-2 {
+        font-size: 20px;
+    }
+
+    .grid-element-5 {
+        font-size: 18px;
+    }
+
+    /* IMÁGENES GRANDES */
+    .img-recetas img,
+    .info img {
+        height: auto;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer__list-titulo {
+        font-size: 24px;
+    }
+    
+}
+
+/*  Para celulares muy pequeños */
+@media (max-width: 480px) {
+
+    .dropdown-button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .btn {
+        top: 180px;
+        font-size: 14px;
+    }
+
+    .grid-element img {
+        width: 180px;
+    }
+
+    .grid__item-2-btn {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .main__wrapper {
+        background-size: contain;    /* La imagen se hace pequeña */
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 450px;           /* Ajusta la altura */
+    }
+}

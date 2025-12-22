@@ -1,0 +1,154 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header img{
+    width: 60PX;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #18233f;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+   
+}
+.navbar LI{
+    list-style: NONE;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar li:hover{
+    opacity: 0.8;
+    outline: 2px solid #fff6;
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+/* ====== SECCIÓN PRINCIPAL ====== */
+.portfolio {
+    background-color: #18233f;
+    color: #fff;
+    min-height: 100vh; /* antes decía min-width */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    container-name: portfolio;
+    container-type: inline-size;
+    padding: 1rem;
+}
+
+/* ====== TÍTULO ====== */
+.portfolio__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio_project-name_a{
+  text-decoration: none;
+  color: #fff;
+}
+/*.portfolio_project-name_a:hover{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #888;
+
+}*/
+/* ====== CONTENEDOR DE PROYECTOS ====== */
+.portfolio_project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 90vh;
+}
+
+/* ====== TARJETAS ====== */
+.portfolio__proyect {
+    background-image: linear-gradient(#0005,#0005), url(IMAGENES/flores.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: aparece both;
+    animation-timeline: view();
+    animation-range: contain 5% cover 50%;
+}
+
+
+.portfolio__proyect:hover {
+    opacity: 0.8;
+    outline: 2px solid #fff6;
+    transform: scale(1.02);
+}
+.portfolio__proyect:first-child{
+    background-image:linear-gradient(#0005,#0005), url(IMAGENES/mascotas.jpg);
+    background-size: cover;
+    font-size: 25px;
+   
+}
+
+/* ====== CONTAINER QUERIES (modernos) ====== */
+@container portfolio (min-width: 56.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+    .portfolio__proyect:first-child {
+        grid-column: span 2;
+    }
+    .portfolio__proyect:nth-child(6) {
+        grid-column: span 2;
+    }
+}
+
+@container portfolio (min-width: 81.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .portfolio__proyect:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .portfolio__proyect:nth-child(6) {
+        grid-column: span 4;
+    }
+}
+
+/* ====== MEDIA QUERIES (fallback para navegadores sin @container) ====== */
+@media (min-width: 900px) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+}
+
+@media (min-width: 1300px) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* ====== ANIMACIÓN ====== */

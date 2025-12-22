@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_mascota.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+
+    <!-- BOTÓN HAMBURGUESA (solo móvil) -->
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <!-- SIDEBAR LATERAL -->
+    <nav class="sidebar" id="sidebar">
+        <div class="dropdown">
+            <button class="dropdown-button">PERROS</button>
+            <div class="dropdown-content">
+                <a href="section_perros_adultos.html">Alimento adultos</a>
+                <a href="#">Alimento cachorros</a>
+                <a href="#">Juguetes</a>
+                <a href="#">Accesorios</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">GATOS</button>
+            <div class="dropdown-content">
+                <a href="#">Alimento Gatitos</a>
+                <a href="#">Alimento Gatos Adultos</a>
+                <a href="#">Juguetes</a>
+                <a href="#">Accesorios</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">AVES</button>
+            <div class="dropdown-content">
+                <a href="#">Comida balanceada</a>
+                <a href="#">Jaulas</a>
+                <a href="#">Juguetes</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR ORIGINAL -->
+    <nav class="navbar">
+        <div class="elemento">
+            <ul class="list">
+                <div class="dropdown">
+                    <button class="dropdown-button">PERROS</button>
+                    <div class="dropdown-content">
+                        <a href="section_perros_adultos.html">Alimento adultos</a>
+                        <a href="#">Alimento cachorros</a>
+                        <a href="#">Juguetes</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">GATOS</button>
+                    <div class="dropdown-content">
+                        <a href="#">Alimento Gatitos</a>
+                        <a href="#">Alimento Gatos Adultos</a>
+                        <a href="#">Juguetes</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">AVES</button>
+                    <div class="dropdown-content">
+                        <a href="#">Comida balanceada</a>
+                        <a href="#">Jaulas</a>
+                        <a href="#">Juguetes</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="elemento">
+            <img src="IMAGENES/logo1.avif" alt="">
+        </div>
+
+        <div class="elemento2">
+            <ul class="list_2">
+                <input class="list__2-input" type="text" placeholder="Buscar"> 
+                <span class="material-symbols-outlined">Search</span>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+   <!-- <header class="header">
+        
+        <nav class="navbar">
+         <div class="elemento">
+            <ul class="list">
+            <div class="dropdown">
+            <button class="dropdown-button">PERROS</button>
+        <div class="dropdown-content">
+        <a href="#">Alimento adultos</a>
+        <a href="#">Alimento cachorros</a>
+        <a href="#">Juguetes</a>
+        <a href="#">Accesorios</a>
+        </div>
+        </div>
+          <div class="dropdown">
+            <button class="dropdown-button">GATOS</button>
+        <div class="dropdown-content">
+        <a href="#">Alimento Gatitos</a>
+        <a href="#">Alimento Gatos Adultos</a>
+        <a href="#">Juguetes</a>
+        <a href="#">Accesorios</a>
+        </div>
+        </div>
+          <div class="dropdown">
+            <button class="dropdown-button">AVES</button>
+        <div class="dropdown-content">
+        <a href="#">Comida balanceada</a>
+        <a href="#">Jaulas</a>
+        <a href="#">Juguetes</a>
+        <a href="#">Contacto</a>
+        </div>
+        </div>-->
+
+                 <!--<li class="list_item"><a href="#">GATOS</a></li>
+                 <li class="list_item"><a href="#">AVES</a></li>
+                 <li class="list_item"><a href="#">REPTILES</a></li>
+                 <li class="list_item"><a href="#">CONEJOS</a></li>-->
+               <!-- </div>
+            </ul>
+            </div>
+            <div class="elemento">
+        <img src="IMAGENES/logo1.avif" alt="">
+        </div>
+            <div class="elemento2">
+            <ul class="list_2">
+                <input class="list__2-input" type="text" placeholder="Buscar"> <span class="material-symbols-outlined">Search</span>
+            </ul>
+            </div>
+           
+        </nav>
+    </header>--> 
+    <main class="main__wrapper">
+        <!--<div class="main__element">
+            <img src="IMAGENES/fondo_texto.jpg" class="main__element-1" alt="">
+            <img src="IMAGENES/m_fondo.jpg" class="main__element-2"alt="">
+        </div>-->
+        <div class="button">
+            <button class="btn">¡COMPRA AHORA!</button>
+
+        </div>
+
+    </main>
+    <section class="section-wrapper">
+        <h2>Croquetas super premium para perros, gatitos, aves, premios y accesorios</h2>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+  <nav class="category-tabs">
+    <button class="tab-button active" data-tab="perros">Perros</button>
+    <button class="tab-button" data-tab="gatos">Gatos</button>
+     <button class="tab-button" data-tab="aves">Aves</button>
+    
+</nav>
+
+
+<section id="perros" class="tab-content active">
+    <div class="grid">
+            <div class="grid-element">
+              <a href="#"><img src="IMAGENES/OIP (1).png" alt=""></a>
+              <b class="grid-element-1">
+                CACHORRO
+              </b>
+              <p class="grid-element-2"><a href="#">
+                Receta 1 Cachorro
+              </p></a>
+              <b class="grid-element-3">
+                2/18 MESES
+              </b>
+              <P class="grid-element-4">
+                Pollo,cerdo,maíz,huevo y salmón
+              </P>
+              <p class="grid-element-5">
+                Desde $350.00 MXN
+              </p>
+            </div>
+            <div class="grid-element">
+              <img src="IMAGENES/bulto1.jpg" alt="">
+               <b class="grid-element-1">
+                ADULTO
+              </b>
+              <p class="grid-element-2"><a href="#">
+                  Receta 2 Razas Medianas y grandes
+              </p></a>
+              <b class="grid-element-3">
+                2-7 AÑOS
+              </b>
+               <P class="grid-element-4">
+                Pollo,cerdo,maíz,huevo y atún
+              </P>
+               <p class="grid-element-5">
+                Desde $503 MX
+              </p>
+             
+            </div>
+          <div class="grid-element">
+                 <img src="IMAGENES/bulto3.png" alt="">
+                  <b class="grid-element-1">
+                RAZAS PEQUEÑAS
+              </b>
+              <p class="grid-element-2"><a href="#">
+                  Receta 2 Razas Pequeñas
+              </p></a>
+              <b class="grid-element-3">
+                2-7 AÑOS
+              </b>
+               <P class="grid-element-4">
+                Pollo,cerdo,maíz,camote, salmón
+              </P>
+               <p class="grid-element-5">
+                Desde $595.00 MX
+              </p>
+            </div>
+</section>
+
+<section id="gatos" class="tab-content">
+     <div class="grid">
+            <div class="grid-element">
+              <a href="#"><img src="IMAGENES/gatitos1.png" alt=""></a>
+              <b class="grid-element-1">
+                CACHORRO
+              </b>
+              <p class="grid-element-2"><a href="#">
+                Receta Original Gato Cachorro
+              </p></a>
+              <b class="grid-element-3">
+                2/18 MESES
+              </b>
+              <P class="grid-element-4">
+                Pollo,atún y salmón
+              </P>
+              <p class="grid-element-5">
+                Desde $350.00 MXN
+              </p>
+            </div>
+            <div class="grid-element">
+              <img src="IMAGENES/gatitos2.png" alt="">
+               <b class="grid-element-1">
+                ADULTO
+              </b>
+              <p class="grid-element-2"><a href="#">
+                  Receta 2 Receta Gato Adulto
+              </p></a>
+              <b class="grid-element-3">
+                2-7 AÑOS
+              </b>
+               <P class="grid-element-4">
+                Atún, salmon, pollo, adicionada 
+                con vitaminas, fortaleciendo la piel y pelaje
+              </P>
+               <p class="grid-element-5">
+                Desde $503 MX
+              </p>
+             
+            </div>
+          <div class="grid-element">
+                 <img src="IMAGENES/GATO2.png" class="img_gatito3" alt="">
+                  <b class="grid-element-1">
+                ADULTOS ESPACIALES
+              </b>
+              <p class="grid-element-2"><a href="#">
+                 RECETA 3 Receta Gato Urinario
+              </p></a>
+              <b class="grid-element-3">
+                2-7 AÑOS
+              </b>
+               <P class="grid-element-4">
+                Pollo,atún. salmón, adicionado con vitaminas
+                para mejorar su funcion renal
+              </P>
+               <p class="grid-element-5">
+                Desde $650.00 MX
+              </p>
+            </div>
+</section>
+<section id="aves" class="tab-content">
+    <h2>Contenido de Gatos</h2>
+    <p>Aquí irían los productos de aves.</p>
+</section>
+<br>
+<br>
+<section class="recetas">
+  <h2>
+    Recetas con proteínas de calidad de origen
+  </h2>
+  <p>Somos parte de <strong>GRUPO ABC</strong>, donde por más de 25
+    años nuestros objetivos han sido dar la 
+    mejor calidad de alimento a nuestras mascotas
+  </p>
+  <br>
+  <button class="btn-2">
+    <a href="#">CONÓCENOS</a>
+  </button>
+</section>
+<br>
+<br>
+<section class="img-recetas">
+  <img src="IMAGENES/segundo_fondo.jpg" alt="">
+</section>
+
+<section class="info">
+  <img src="IMAGENES/2.receta.jpg" alt="">
+</section>
+
+<section class="grid--__fondo">
+  <div class="grid-2">
+  <div class="grid__item-2">
+     <span class="material-symbols-outlined ">Pets</span>
+    <p class="grid__item-2-titulo">
+      Ahorra con nuestros planes acumulando puntos en tus compras
+    </p>
+    <br>
+    <p class="grid__item-2-parrafo">
+        Haz tu pedido ahora y ahorra el 25%
+    </p>
+    <br>
+     <p class="grid__item-2-parrafo">
+        en tu proxima compra
+    </p>
+    <button class="grid__item-2-btn">
+      CONOCE LAS RECETAS
+    </button>
+  </div>
+  <div class="grid__item-2">
+    <div class="grid__item-2">
+     <span class="material-symbols-outlined ">Favorite</span>
+    <p class="grid__item-2-titulo">
+      Compra la mejor receta para tu mejor amigo
+    </p>
+    <br>
+    <br>
+    <p class="grid__item-2-parrafo">
+        Haz tu pedido hoy y haz feliz
+    </p>
+    <br>
+     <p class="grid__item-2-parrafo">
+        a tu perrihijo o gatihijo :)
+    </p>
+    <button class="grid__item-2-btn">
+      CONOCE LAS RECETAS
+    </button>
+  </div>
+  </div>
+</div>
+</section>
+<footer class="footer">
+  <ul class="footer__list">
+    <h2 class="footer__list-titulo">
+      Conoce más
+    </h2>
+    <li class="footer__list-element"><a href="#">Conoce el origen</a></li>
+     <li class="footer__list-element"><a href="#">Garantía ABC</a></li>
+      <li class="footer__list-element"><a href="#">BLOG</a></li>
+       <li class="footer__list-element"><a href="#">Quiz de alimeto</a></li>
+  </ul>
+  <ul class="footer__list" >
+    <h2 class="footer__list-titulo">
+      Atencion a clientes
+    </h2>
+    <li class="footer__list-element"><a href="#">Envianos un mensaje</a></li>
+    <li class="footer__list-element"><a href="#">Conoce el origen</a></li>
+    <li class="footer__list-element"><a href="#">Politicas de reembolso</a></li>
+    <li class="footer__list-element"><a href="#">Conoce el origen</a></li>
+  </ul>
+  <ul class="footer__list" >
+    <h2 class="footer__list-titulo">
+      Contacto
+    </h2>
+    <li class="footer__list-element"><a href="#">hola@somosABC.com</a></li>
+    <li class="footer__list-element"><a href="#">2222096913</a></li>
+    <li class="footer__list-element"><a href="#">Calle 16 de septiembre, Puebla, Puebla</a></li>
+   
+  </ul>
+  
+</footer>
+    <!--
+    <section class="section__images">
+        <div class="grid">
+            <div class="grid-element">
+              <a href="#"><img src="IMAGENES/OIP (1).png" alt=""></a>
+            </div>
+            <div class="grid-element">
+              <img src="IMAGENES/bulto1.jpg" alt="">
+            </div>
+          <div class="grid-element">
+                 <img src="IMAGENES/bulto3.png" alt="">
+            </div>
+        </div>
+    </section>-->
+   
+    <script src="prube.js"></script>
+  <script src="tienda2.js"></script>
+</body>
+</html>
