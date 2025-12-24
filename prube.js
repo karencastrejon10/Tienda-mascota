@@ -1,4 +1,4 @@
-//SIRVE PARA QUE PODAMOS DARL CLIC A CADA NOMBRE LO QUE ES PERROS, GATOS Y AVES
+//SIRVE PARA QUE PODAMOS DARL CLIC A CADA NOMBRE LO QUE ES PERROS, GATOS Y AVES 
 const buttons = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
 
