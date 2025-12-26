@@ -67,6 +67,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-size: 15PX;
+margin-top: 10px;
 
 }
 .dropdown-content {
@@ -102,6 +103,7 @@ display: block;
     top: 20px;
     left: 20px;
     z-index: 1000;
+    margin-top: -7px;
 }
 
 /* SIDEBAR LATERAL */
@@ -154,6 +156,7 @@ display: block;
 }
 .elemento2 input{
     padding: 5px;
+    margin-top: 14px;
 }
 .main__wrapper{
      padding: 0;
