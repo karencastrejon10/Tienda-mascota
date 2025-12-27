@@ -1,6 +1,6 @@
 // Array de productos
 const productos = [
-  {nombre: "Acanan Gatito", precio: 1100, img:  "IMAGENES/1.GATITOS/Acanan Gatito.WEBP" },
+  {nombre: "Acanan Gatito", precio: 1100, img:  "IMAGENES/1.GATITOS/Acanan Gatito.webp"},
   {nombre: "Bravery gatitos", precio: 700, img: "IMAGENES/1.GATITOS/Bravery gatitos.jpg" },
   {nombre: "Fawna", precio: 550, img: "IMAGENES/1.GATITOS/fawna_gatitos.jfif" },
   {nombre: "Hills Science Diet Kitten", precio: 540, img: "IMAGENES/1.GATITOS/Hills Science Diet Kitten.jpg" },
