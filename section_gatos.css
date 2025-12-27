@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #FFFF;
+    min-height: 100vh;
+   
+}
+/*HEADER MAS EL NAVBAR COMPUTADORA Y DISPOSITIVOS MOVILES*/
+/*------TODO ESTO ES LO DEL NAVBAR NO OLVIDAR PONER EL JAVA SCRIPT PARA QUE FUNCIONE 
+ELMENU HAMBURGUESA*/
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #FFFF;
+     
+
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+.listas{
+    display: flex;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.list{
+   display: flex;
+   margin-top:30px;
+   gap: 10px;
+
+}
+
+.list_item a{
+   text-decoration: none;
+   color: #000;
+   
+}
+.list_item a:hover{
+    border: 1px solid #4ca1f5;
+    border-radius: 15px;
+    color: #4ca1f5;
+    background-color: #c2e6fd;
+    
+}
+.list_item {
+    list-style: none;
+}
+
+/*SECCION PARA EL MENU DESPLEGABLE*/
+.dropdown {
+position: relative;
+display: inline-block;
+margin-left: 10px;
+
+}
+.dropdown-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #000;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 15PX;
+
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+min-width: 160px;
+z-index: 4;/*ES SUPER IMPORTANTE PONER EL Z-INDEX PARA Q2UE EL COMPORTAMIENTO NO CAMBIE*/
+}
+.dropdown-content a {
+color: black;
+text-decoration: none;
+padding: 12px 16px;
+display: block;
+
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/*PARA EL MENU HAMBURGUESA EN DISPISITVOS MOVILES*/
+/* BOTÓN HAMBURGUESA */
+.menu-btn {
+    font-size: 32px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Oculto en desktop */
+    position: fixed;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    margin-top: -14px;
+}
+
+/* SIDEBAR LATERAL */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* DROPDOWNS DENTRO DEL SIDEBAR */
+.sidebar .dropdown {
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar .dropdown-button {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .dropdown-content {
+    position: static;
+    display: none;
+    background-color: #e9e9e9;
+    padding-left: 10px;
+}
+
+.sidebar .dropdown:hover .dropdown-content {
+    display: block;
+}
+.elemento2{
+    padding: 10px 20px;
+    display: flex;
+}
+.elemento2 input{
+    padding: 5px;
+}
+
+/*Srive paara hacer pequeña la resolución*/
+@media(max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .list {
+        display: none; /* Oculta menú horizontal */
+    }
+
+    .elemento2 {
+        display: none; /* Oculta buscador */
+    }
+}
+
+.main__wrapper{
+    display: flex;
+}
+.main__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__wrapper h1{
+    color: #000;
+}
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(2,minmax(200px,1f));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  transition: transform 0.3s;
+  box-shadow: 0px 0px 15px #999;
+  
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+  object-position: center;
+}
+
+.producto a{
+   text-decoration: none;
+    color: #000;
+}
+.producto h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+.producto p {
+  font-size: 16px;
+  color: #333;
+}
+.producto button{
+    margin-top: -20px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #f01212;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif; 
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    /*color: #000;
+    padding: 10px 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 17px;
+    background-color: #c2e6fd;*/
+}
+.producto button::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;              /* empieza en el centro */
+    height: 2px;
+    width: 0;                /* contraída */
+    background-color: #0b2430;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.producto button:hover::after{
+    width: 100%;             /* se expande totalmente */
+    left: 0;                 /* se mueve hacia la izquierda para cubrir todo */
+}
+.producto button:hover{
+    background-color: #c2e6fd;
+}
+.producto button a{
+    text-decoration: none;
+    color: #000;
+
+}
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer__list-titulo{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.footer__list-element{
+    display: block;
+    margin-top: 15px;
+}
+.footer__list-element a{
+    text-decoration: none;
+    color: #ddd;
+}
+/*MEDIA QUERIES PARA LOS GRIDS O SEA LOS PRODUCTOS */
+@media (max-width: 992px) {
+
+    .productos-grid img {
+        width: 250px;
+    }
+
+    /* Grid-2 (cuadros grandes) */
+   .productos-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+         /*  grid-template-columns: repeat(2, 1fr);*/
+    }
+    
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer__list-titulo {
+        font-size: 24px;
+    }
+
+}
