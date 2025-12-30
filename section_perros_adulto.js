@@ -23,10 +23,10 @@ productos.forEach(producto => {
   div.classList.add("producto");
 
   div.innerHTML = `
-   <a href="#"><img src="${producto.img}" alt="${producto.nombre}"></a>
-    <a href="#"><h3>${producto.nombre}</h3></a>
+   <a href="p_adulto1.html"><img src="${producto.img}" alt="${producto.nombre}"></a>
+    <a href="p_adulto1.html"><h3>${producto.nombre}</h3></a>
     <p>Desde $${producto.precio} MXN</p>
-    <button><a href="#">Comprar</a></button>
+    <button><a href="p_adulto1.html">Comprar</a></button>
   `;
 
   grid.appendChild(div);
