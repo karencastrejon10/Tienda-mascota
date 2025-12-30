@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     margin: 0;
     font-family: sans-serif;
@@ -185,32 +187,12 @@ display: block;
     background-color: #4ca1f5;
     color: #fff;
 }
-/*
-.main__wrapper{
-    width: 100%;
-    display: flex;
-    min-height: 800px;
-    border: 1px solid #000;
-    margin-top: 50px;
-}
-.wrapper-element{
-    display: grid;
-
-    border: 1px solid #000;
-
-}
-.wrapper-element img{
-  
-   left: 200px;
-   width: 250px;
-  
-}*/
 .main__wrapper{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    border:1px solid #000;
     min-height: 750px;
+    flex-wrap: wrap;
    
 }
 .main__wrapper img{
@@ -219,11 +201,48 @@ display: block;
    top: 120px;
 }
 .wrapper-element1{
-    background-color:#ddd ;
+    background-color:#F8F9FA; /*gris muy glaro*/
     width: 50%;
+    border-radius: 6px;
+}
+.wrapper-element1 p{
+    position: relative;
+
+    margin: 50px;
 }
 .wrapper-element1 h2{    
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   font-weight: 800;
-   text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 50px;
+  display: flex ;
+ margin: 50px;    
+}
+.elemento1-p1{
+    margin: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+}
+.elemento1-p2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.botones {
+  display: flex;
+  gap: 10px;
+  margin: 50px;
+}
+
+.btn {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn.activo {
+  background: black;
+  color: white;
 }
