@@ -115,10 +115,25 @@
     <button class="btn" data-precio="1020" data-tamano="10 kg">10 kg</button>
     <button class="btn" data-precio="1450" data-tamano="15 kg">15 kg</button>
   </div>
+     
+<div class="purchase-section">
+
+  <!--SELECCIONAMOS LA CANTIDAD QUE VAMOS A OCUPAR-->
+  <div class="quantity-selector">
+    <button id="minus">−</button>
+    <input type="number" id="quantity" value="1" min="1">
+    <button id="plus">+</button>
+  </div>
+
+  <!-- Boton para agregar al carrito -->
+  <button class="add-to-cart">
+    AGREGAR AL CARRITO
+  </button>
     </div>
 </main>
 
 <script src="tienda2.js"></script>
 <script src="p_adulto.js"></script>
+<script src="boton_cantidad.js"></script>
 </body>
 </html>
