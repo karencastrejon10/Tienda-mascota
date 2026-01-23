@@ -185,6 +185,12 @@ display: block;
    position: relative;
   
 }
+.wrapper-element {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper-element1{
     background-color:#F8F9FA; /*gris muy glaro*/
     width: 50%;
@@ -337,6 +343,13 @@ display: block;
     flex: 1;
     font-size: 16px;
     padding: 12px;
+  }
+  .botones {
+    padding: 0 12px;   /* aire a los lados */
+  }
+
+  .btn {
+    margin: 0 2px;     /* separación visual entre botones */
   }
 
   .purchase-section {
