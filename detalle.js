@@ -21,11 +21,60 @@ const productos = [
     descripcion: "Proteína de alta calidad para perros adultos",
     deta: "ADULTO",
     opciones: [
-      { tamano: "4 kg", precio: 350 },
-      { tamano: "8 kg", precio: 650 },
-      { tamano: "15 kg", precio: 1000 }
+      { tamano: "7 kg", precio: 550 },
+      { tamano: "12 kg", precio: 950 },
+      { tamano: "25 kg", precio: 1700}
+    ]
+  },
+   {
+    id: 2,
+    img: "IMAGENES/4.PERROS/Nupec Perro.jpg",
+    nombre: "NUPEC PERRO SENIOR",
+    descripcion: "Carne roja, huevo, zanahoria, todo para tener un perro senior fuerte y sano",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "4 kg", precio: 650 },
+      { tamano: "10 kg", precio: 1200},
+      { tamano: "15 kg", precio: 1750}
+    ]
+  },
+   {
+    id: 3,
+    img: "IMAGENES/4.PERROS/nupec2.jpg",
+    nombre: "NUPEC RAZAS PEQUEÑAS",
+    descripcion: "Pescado, Salmon y huevo todo para un perro sano rico en Omega 3",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "5 kg", precio: 550 },
+      { tamano: "8 kg", precio: 950},
+      { tamano: "10 kg", precio: 1100}
+    ]
+  },
+    {
+    id: 4,
+    img: "IMAGENES/4.PERROS/Orijen Perro2.jpg",
+    nombre: "ORIGEN PET",
+    descripcion: "Pollo, Carne y vitaminas A Y B",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "7 kg", precio: 1775 },
+      { tamano: "10 kg", precio: 2250},
+      { tamano: "12 kg", precio: 2500}
+    ]
+  },
+    {
+    id: 5,
+    img: "IMAGENES/4.PERROS/purina_one1.jpg",
+    nombre: "PURINA ONE RAZAS PEQUEÑAS",
+    descripcion: "Pollo, carne, res y todo para un perro saludable",
+    deta: "ADULTO RAZAS PEQUEÑAS",
+    opciones: [
+      { tamano: "5 kg", precio: 700},
+      { tamano: "8 kg", precio: 1200},
+      { tamano: "14 kg", precio: 1500}
     ]
   }
+  
 ];
 
 
