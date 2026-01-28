@@ -57,7 +57,7 @@ const productos = [
     descripcion: "Pollo, Carne y vitaminas A Y B",
     deta: "ADULTO",
     opciones: [
-      { tamano: "7 kg", precio: 1775 },
+      { tamano: "7 kg", precio: 1775},
       { tamano: "10 kg", precio: 2250},
       { tamano: "12 kg", precio: 2500}
     ]
@@ -73,11 +73,81 @@ const productos = [
       { tamano: "8 kg", precio: 1200},
       { tamano: "14 kg", precio: 1500}
     ]
-  }
+  },
+      {
+    id: 6,
+    img: "IMAGENES/4.PERROS/purina_one2.jpg",
+    nombre: "PURINA ONE Adultos",
+    descripcion: "Pollo, carne, res con cereales muy nutritivos",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "4 kg", precio: 300},
+      { tamano: "6 kg", precio: 550},
+      { tamano: "10 kg", precio: 1000}
+    ]
+  },
+       {
+    id: 7,
+    img: "IMAGENES/4.PERROS/purina_one3.jpg",
+    nombre: "PURINA SENIOR",
+    descripcion: "Pollo, carne y vitaminas que nutriran a tu perro senior",
+    deta: "SENIOR",
+    opciones: [
+      { tamano: "4 kg", precio: 450},
+      { tamano: "6 kg", precio: 700},
+      { tamano: "10 kg", precio: 1200}
+    ]
+  },
+       {
+    id: 8,
+    img: "IMAGENES/4.PERROS/Royal Canin Perro.jpg",
+    nombre: "ROYAL CANIN",
+    descripcion: "Salmon, carne y omega 3 para un pelaje bonito y un perro fuerte",
+    deta: "ADULTO MEDIANO",
+    opciones: [
+      { tamano: "5 kg", precio: 750},
+      { tamano: "10 kg", precio: 1300},
+      { tamano: "15 kg", precio: 1850}
+    ]
+  },
+       {
+    id: 9,
+    img: "IMAGENES/4.PERROS/Royal Canin Perro2.jpg",
+    nombre: "ROYAL CANIN",
+    descripcion: "Carne roja, res y vegetales que haran un perro fuerte",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "5 kg", precio: 750},
+      { tamano: "10 kg", precio: 1300},
+      { tamano: "15 kg", precio: 1850}
+    ]
+  },
+       {
+    id: 10,
+    img: "IMAGENES/4.PERROS/Taste Food Perro1.webp",
+    nombre: "TASTE FOOD",
+    descripcion: "Carne roja, res y vegetales que haran un perro fuerte",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "5 kg", precio: 1750},
+      { tamano: "7 kg", precio: 2250},
+      { tamano: "10 kg", precio: 2550}
+    ]
+  },
+         {
+    id: 11,
+    img: "IMAGENES/4.PERROS/Taste Food Perro3.jpg",
+    nombre: "TASTE FOOD",
+    descripcion: "Pescado, salmon e ingredintes naturales ",
+    deta: "ADULTO",
+    opciones: [
+      { tamano: "5 kg", precio: 1750},
+      { tamano: "7 kg", precio: 2250},
+      { tamano: "10 kg", precio: 2550}
+    ]
+  },
   
 ];
-
-
 // Leer el ID de la URL
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
